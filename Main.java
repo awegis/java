@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner x = new Scanner(System.in);
-        System.out.println("Привет, пользователь! Сколько чисел будет в массиве?");
+        System.out.println(("Привет, пользователь!" +
+                "Сколько чисел будет в массиве?");
 
         int size = x.nextInt();
         int[] arr = new int[size];
@@ -21,7 +22,8 @@ public class Main {
                 min = arr[i];
             i++;
         }
-        System.out.println("Сумма чисел, введенных тобой в массив, равна "+ sum + "\nМаксимальное число массива равно "+ max + "\nМинимальное число массива равно "+ min);
-
+        System.out.println("Сумма чисел, введенных тобой в массив, " +
+                "равна " + sum + "\nМаксимальное число массива равно " + 
+                max + "\nМинимальное число массива равно "+ min);
     }
 }
